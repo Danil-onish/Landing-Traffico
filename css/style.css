@@ -67,7 +67,7 @@ html {
 .button .arrow {
     display: inline-block;
     height: 13px;
-    width: 47px;
+    width: 30px;
     margin-left: 24px;
 
     background-image: url(../img/Union.svg);
@@ -147,20 +147,25 @@ header .link,
 
 .hero .title {
     width: 741px;
+    margin-top: 44px;
     margin-bottom: 60px;
 
     font-family: var(--secondary-font-fam);
     font-weight: 400;
     font-size: 100px;
+    line-height: 100px;
 }
 
 .hero .button {
-    display: inline-block;
-    height: 60px;
-    line-height: 60px;
+    padding: 20px 25px;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 19px;
 }
 
-section:not(.hero) {
+section:not(.hero, .faq) {
     display: flex;
 }
 
@@ -178,13 +183,14 @@ section h2 {
 section .text {
     font-weight: 300;
     font-size: 18px;
+    line-height: 40px;
 }
 
 .about-us .title {
     margin-bottom: 40px;
 }
 
-.about-us .content1{
+.about-us .content1 {
     margin-right: 125px;
 }
 
@@ -197,27 +203,111 @@ section .text {
 
     font-weight: 500;
     font-size: 24px;
+    line-height: 36px;
     color: #402B2B;
 
     background-image: url(../img/Group\ 25.svg);
     background-repeat: no-repeat;
 }
 
-.how-to-apply{
+.how-to-apply {
     flex-direction: row-reverse;
 }
 
-.how-to-apply .content1{
+.how-to-apply .content1 {
     margin-right: 250px;
 }
 
-.how-to-apply .content2{
+.how-to-apply .content2 {
     margin-right: 160px;
-    margin-bottom: 310px;
+    margin-bottom: 500px;
 }
 
-.how-to-apply .title{
+.how-to-apply .title {
     margin-bottom: 40px;
+}
+
+.faq-bg {
+    height: 2090px;
+
+    background-image: url(/img/Group\ 36.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 500px;
+}
+
+.faq .content1 {
+    width: 550px;
+}
+
+.faq .inner-title {
+    margin-top: 44px;
+    margin-bottom: 170px;
+
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.faq .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1120px;
+    height: 600px;
+}
+
+.cards .item {
+    position: relative;
+
+    width: 550px;
+    height: 90px;
+
+    margin-bottom: 10px;
+
+    background-color: #fff;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+}
+
+.cards .item {
+    transition-property: margin-bottom;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.cards .item:hover {
+    margin-bottom: 210px;
+}
+
+.cards .item:nth-child(5n):hover,
+.cards .item:nth-child(6n):hover {
+    margin-bottom: 10px;
+
+}
+
+.cards .item .title {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    right: 115px;
+
+    transform: translate(0%, -50%);
+
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.faq .cards {
+    margin-bottom: 23px;
 }
 
 .first-footer {
