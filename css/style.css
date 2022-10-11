@@ -233,12 +233,12 @@ section .text {
 }
 
 .faq-bg {
-    height: 2090px;
+    height: 2190px;
 
-    background-image: url(../img/Group\ 36.svg);
+    background-image: url(../img/FAQ-bg.svg);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 500px;
+    background-position-y: 700px;
 }
 
 .faq .content1 {
