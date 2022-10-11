@@ -235,7 +235,7 @@ section .text {
 .faq-bg {
     height: 2090px;
 
-    background-image: url(/img/Group\ 36.svg);
+    background-image: url(../img/Group\ 36.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 500px;
